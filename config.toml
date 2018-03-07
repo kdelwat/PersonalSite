@@ -1,0 +1,19 @@
+baseURL = "http://cadelwatson.com/"
+languageCode = "en-us"
+title = "Cadel Watson"
+theme = "SimpleTheme"
+sectionPagesMenu = "main"
+
+[[menu.main]]
+    weight = 1
+	identifier = "projects"
+	name = "Projects"
+    title = "Projects"
+    url = "/projects/"
+
+[[menu.main]]
+    weight = 10
+	identifier = "environment"
+	name = "Environment"
+    title = "Environment"
+    url = "/environment/"
