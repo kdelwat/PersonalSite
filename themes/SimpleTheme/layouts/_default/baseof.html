@@ -2,23 +2,26 @@
 {{ partial "header.html" }}
 
 <body>
-	<section>
+	<main>
 		<header>
 			<h1>Cadel Watson</h1>
+			<p>cadel@cadelwatson.com</p>
 		</header>
 
-		<aside>
-			{{ partial "navigation.html" . }}
-		</aside>
-
 		<article>
-			{{ block "main" . }} {{ end }}
+			<nav>
+				{{ partial "navigation.html" . }}
+			</nav>
+
+			<section>
+				{{ block "main" . }} {{ end }}
+			</section>
 		</article>
 
 		<footer>
 			{{ partial "footer.html" }}
 		</footer>
-	</section>
+	</main>
 </body>
 
 </html>
