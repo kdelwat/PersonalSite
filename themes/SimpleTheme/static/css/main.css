@@ -1,0 +1,28 @@
+section {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+
+
+@media (min-width: 800px) {
+
+	section {
+		width: 80vw;
+		margin: 1rem auto;
+		flex-direction: row;
+	}
+
+	header {
+		flex-basis: 100%;
+	}
+
+	aside {
+		flex-basis: 25%;
+	}
+
+	article {
+		flex-basis: 75%;
+	}
+}

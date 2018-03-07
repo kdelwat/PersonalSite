@@ -2,7 +2,23 @@
 {{ partial "header.html" }}
 
 <body>
-	{{ partial "navigation.html" . }} {{ block "main" . }} {{ end }} {{ partial "footer.html" }}
+	<section>
+		<header>
+			<h1>Cadel Watson</h1>
+		</header>
+
+		<aside>
+			{{ partial "navigation.html" . }}
+		</aside>
+
+		<article>
+			{{ block "main" . }} {{ end }}
+		</article>
+
+		<footer>
+			{{ partial "footer.html" }}
+		</footer>
+	</section>
 </body>
 
 </html>
