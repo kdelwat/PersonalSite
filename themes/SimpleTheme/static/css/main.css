@@ -84,6 +84,7 @@ section p {
 .footer {
 	font-size: 10px;
 	text-align: right;
+	margin-right: 0.5em;
 }
 
 @media (min-width: 800px) {
