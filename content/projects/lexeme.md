@@ -1,6 +1,6 @@
 ---
 title: "Lexeme"
-date: 2018-03-07T20:55:51+11:00
+date: 2016-03-12T20:55:51+11:00
 draft: true
 description: "A command-line constructed language word database, generation, and
 declension program."
