@@ -2,6 +2,7 @@
 title: "Momentum"
 date: 2018-03-07T12:48:53+11:00
 draft: true
+description: "An Android task management app."
 ---
 
 *Available on [Google Play](https://play.google.com/store/apps/details?id=com.cadelwatson.momentum)*

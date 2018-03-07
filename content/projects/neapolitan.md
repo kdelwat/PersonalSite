@@ -2,6 +2,7 @@
 title: "Neapolitan"
 date: 2018-03-07T21:01:18+11:00
 draft: true
+description: "An unstyled CSS framework."
 ---
 
 *Available on the [Web](https://kdelwat.github.io/Neapolitan/) or [GitHub](https://github.com/kdelwat/neapolitan).*

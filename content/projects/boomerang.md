@@ -2,6 +2,7 @@
 title: "Boomerang"
 date: 2018-03-07T20:53:15+11:00
 draft: true
+description: "An asynchronous Python library for building services on the Facebook Messenger Platform."
 ---
 
 Messaging applications have the potential to become the user interfaces of the future. Boomerang is an asynchronous Python library for building services on the Facebook Messenger Platform. It has 100% test coverage, forthcoming documentation, and both a high- and low-level API.

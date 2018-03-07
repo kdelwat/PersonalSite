@@ -2,6 +2,8 @@
 title: "Ngujari"
 date: 2018-03-07T21:04:59+11:00
 draft: true
+description: "An interactive site which outlines the grammar of the invented Ngujari language."
+
 ---
 
 *Available on the [Web](http://ngujari.cadelwatson.com) and [GitHub](https://github.com/kdelwat/ngujarigrammar)*
