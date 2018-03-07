@@ -4,6 +4,8 @@ date: 2018-03-07T20:55:51+11:00
 draft: true
 ---
 
+*Available on [GitHub](https://github.com/kdelwat/lexeme).*
+
 Lexeme is a command-line constructed language word database, generation, and
 declension program. It has a number of useful features:
 
