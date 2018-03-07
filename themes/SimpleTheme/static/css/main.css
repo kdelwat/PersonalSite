@@ -81,6 +81,11 @@ section p {
 	margin: 0.5em 0 1.5em 0;
 }
 
+.footer {
+	font-size: 10px;
+	text-align: right;
+}
+
 @media (min-width: 800px) {
 
 	main {
