@@ -17,3 +17,10 @@ sectionPagesMenu = "main"
 	name = "Environment"
     title = "Environment"
     url = "/environment/"
+
+[[menu.main]]
+    weight = 10
+	identifier = "racing"
+	name = "Racing"
+    title = "Racing"
+    url = "/racing/"
