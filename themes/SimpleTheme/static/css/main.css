@@ -61,9 +61,18 @@ figure img {
 	border: 1px solid black;
 }
 
+figure {
+	margin-bottom: 0;
+}
+
 figcaption h4 {
 	margin-top: 0.5rem;
 	font-weight: normal;
+	font-style: italic;
+	margin-bottom: 0.5rem;
+}
+
+blockquote {
 	font-style: italic;
 }
 
