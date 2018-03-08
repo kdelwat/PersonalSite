@@ -2,6 +2,7 @@
 title: "For the Halo"
 date: 2018-03-08T10:31:19+11:00
 draft: true
+description: "A case for the introduction of the Halo safety device."
 ---
 
 In my (limited) time watching Formula One, I've never encountered a change from
