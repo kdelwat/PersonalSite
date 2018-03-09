@@ -15,12 +15,17 @@ article {
 }
 
 header > h1 {
-	margin-bottom: 0px;
+	margin-bottom: 0.25em;
 }
 
 header > p {
 	margin-top: 0px;
+	margin-bottom: 0px;
 	font-style: italic;
+}
+
+header {
+	margin-bottom: 1em;
 }
 
 a {
