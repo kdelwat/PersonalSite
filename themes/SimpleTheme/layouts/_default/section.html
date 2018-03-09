@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h2>{{ .Title }}</h2>
+<h2>{{ humanize .Section }}</h2>
 <ul class="section-list">
 	{{ range .Paginator.Pages }}
 	<li>
