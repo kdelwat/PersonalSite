@@ -1,7 +1,6 @@
 ---
 title: "Coda"
 date: 2017-04-24T20:51:32+11:00
-draft: true
 description: "A service which simplifies the creation of professional-looking reference
 grammars from plain text sources."
 ---

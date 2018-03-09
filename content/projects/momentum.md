@@ -1,7 +1,6 @@
 ---
 title: "Momentum"
 date: 2017-01-19T12:48:53+11:00
-draft: true
 description: "An Android task management app."
 ---
 

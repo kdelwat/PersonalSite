@@ -1,7 +1,6 @@
 ---
 title: "Onset"
 date: 2017-06-20T20:48:35+11:00
-draft: true
 description: "A web-app which realistically simulates the phonological processes of
 word evolution."
 ---
