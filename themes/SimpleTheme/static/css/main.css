@@ -90,6 +90,17 @@ section p {
 	padding-left: 0;
 }
 
+.recent-list {
+	list-style: none;
+	font-style: italic;
+	padding-left: 0;
+}
+
+.recent-header {
+	font-size: inherit;
+	margin-bottom: 0em;
+}
+
 .section-list li p {
 	font-style: italic;
 	margin: 0.5em 0 1.5em 0;
