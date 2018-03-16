@@ -15,7 +15,7 @@ outline my reasons for supporting the Halo's introduction.
 
 # Effectiveness
 
-For me the key question around the Halo is whether it effectively improves
+For me the key question surrounding the Halo is whether it effectively improves
 safety for drivers. The FIA's Formula One strategy group announced in 2017 that
 it would be mandatory on cars this year "to introduce additional frontal
 protection" for drivers. The device aims to provide a barrier in the event of
