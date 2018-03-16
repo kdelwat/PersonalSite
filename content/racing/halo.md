@@ -1,11 +1,11 @@
 ---
-title: "For the Halo"
-date: 2018-03-08T10:31:19+11:00
-description: "A case for the introduction of the Halo safety device."
----
+title: For the Halo
+date: 2018-03-08 10:31:19 +1100
+description: A case for the introduction of the Halo safety device.
 
+---
 In my (limited) time watching Formula One, I've never encountered a change from
-management that has resulted in such polarisation of fans as the Halo.
+management that has resulted in such polarisation of fans as the _Halo_.
 
 {{< figure src="/images/Halo.jpg" title="The Halo on Haas' challenger (Sutton Images)" alt="The Halo device on the Haas F1 car">}}
 
@@ -48,7 +48,7 @@ high-velocity could still strike the driver.
 No matter how good the effectiveness in preventing a certain class of incidents,
 if the Halo were to introduce further safety issues it would be a foolish
 errand. This was the main reason for the delay in implementation from 2017 to
-2018.
+2018\.
 
 A primary concern is visibility, since the main support strut bisects the
 driver's view. However, this doesn't appear to be a problem for drivers.
