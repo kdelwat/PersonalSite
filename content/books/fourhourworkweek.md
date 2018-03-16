@@ -1,7 +1,7 @@
 ---
 title: "The 4-Hour Work Week by Tim Ferriss"
 date: 2018-02-16T20:57:40+11:00
-draft: true
+draft: false
 description: "5/10. An inspiring look at an ideal lifestyle but with a less-than-desirable path to getting there."
 ---
 

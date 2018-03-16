@@ -1,7 +1,7 @@
 ---
 title: "Lincoln in the Bardo by George Saunders"
-date: 2018-02-1T21:15:12+11:00
-draft: true
+date: 2018-02-01T21:15:12+11:00
+draft: false
 description: "10/10. A masterpiece of style and character."
 ---
 
