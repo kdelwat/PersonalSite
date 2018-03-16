@@ -5,7 +5,7 @@ description: A case for the introduction of the Halo safety device.
 
 ---
 In my (limited) time watching Formula One, I've never encountered a change from
-management that has resulted in such polarisation of fans as the _Halo_.
+management that has resulted in such polarisation of fans as the Halo.
 
 {{< figure src="/images/Halo.jpg" title="The Halo on Haas' challenger (Sutton Images)" alt="The Halo device on the Haas F1 car">}}
 
