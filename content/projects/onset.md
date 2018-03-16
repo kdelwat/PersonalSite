@@ -1,10 +1,10 @@
 ---
-title: "Onset"
-date: 2017-06-20T20:48:35+11:00
-description: "A web-app which realistically simulates the phonological processes of
-word evolution."
----
+title: Onset
+date: 2017-06-20 20:48:35 +1100
+description: A web-app which realistically simulates the phonological processes of
+  word evolution.
 
+---
 *Available on the [Web](http://onset.cadelwatson.com) and [GitHub](https://github.com/kdelwat/onset).*
 
 Onset is a web-app which realistically simulates the phonological processes of

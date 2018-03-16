@@ -1,10 +1,10 @@
 ---
-title: "Ngujari"
-date: 2016-09-06T21:04:59+11:00
-description: "An interactive site which outlines the grammar of the invented Ngujari language."
+title: Ngujari
+date: 2016-09-06 21:04:59 +1100
+description: An interactive site which outlines the grammar of the invented Ngujari
+  language.
 
 ---
-
 *Available on the [Web](http://ngujari.cadelwatson.com) and [GitHub](https://github.com/kdelwat/ngujarigrammar)*
 
 The hobby of "conlanging" involves designing languages for fictional speakers.

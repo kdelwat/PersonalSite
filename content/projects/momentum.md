@@ -1,9 +1,9 @@
 ---
-title: "Momentum"
-date: 2017-01-19T12:48:53+11:00
-description: "An Android task management app."
----
+title: Momentum
+date: 2017-01-19 12:48:53 +1100
+description: An Android task management app.
 
+---
 *Available on [Google Play](https://play.google.com/store/apps/details?id=com.cadelwatson.momentum)*
 
 Traditional to-do apps have a fatal flaw. Task lists overflow with items due

@@ -1,10 +1,10 @@
 ---
-title: "Lexeme"
-date: 2016-03-12T20:55:51+11:00
-description: "A command-line constructed language word database, generation, and
-declension program."
----
+title: Lexeme
+date: 2016-03-12 20:55:51 +1100
+description: A command-line constructed language word database, generation, and declension
+  program.
 
+---
 *Available on [GitHub](https://github.com/kdelwat/lexeme).*
 
 Lexeme is a command-line constructed language word database, generation, and

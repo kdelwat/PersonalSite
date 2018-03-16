@@ -1,10 +1,10 @@
 ---
-title: "Coda"
-date: 2017-04-24T20:51:32+11:00
-description: "A service which simplifies the creation of professional-looking reference
-grammars from plain text sources."
----
+title: Coda
+date: 2017-04-24 20:51:32 +1100
+description: A service which simplifies the creation of professional-looking reference
+  grammars from plain text sources.
 
+---
 *Available on [GitHub](https://github.com/kdelwat/coda).*
 
 Preparing reference grammars is an essential part of linguistic research. Coda

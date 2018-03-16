@@ -1,19 +1,17 @@
 baseURL = "http://cadelwatson.com/"
 languageCode = "en-us"
-title = "Cadel Watson"
-theme = "SimpleTheme"
 sectionPagesMenu = "main"
-
+theme = "SimpleTheme"
+title = "Cadel Watson"
 [[menu.main]]
-    weight = 1
-	identifier = "projects"
-	name = "Projects"
-    title = "Projects"
-    url = "/projects/"
-
+identifier = "racing"
+name = "Racing"
+title = "Racing"
+url = "/racing/"
+weight = 10
 [[menu.main]]
-    weight = 10
-	identifier = "racing"
-	name = "Racing"
-    title = "Racing"
-    url = "/racing/"
+identifier = "projects"
+name = "Projects"
+title = "Projects"
+url = "/projects/"
+weight = 1

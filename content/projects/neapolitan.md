@@ -1,9 +1,9 @@
 ---
-title: "Neapolitan"
-date: 2016-10-30T21:01:18+11:00
-description: "An unstyled CSS framework."
----
+title: Neapolitan
+date: 2016-10-30 21:01:18 +1100
+description: An unstyled CSS framework.
 
+---
 *Available on the [Web](https://kdelwat.github.io/Neapolitan/) or [GitHub](https://github.com/kdelwat/neapolitan).*
 
 CSS frameworks often sacrifice freedom of styling for ease-of-use.
