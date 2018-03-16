@@ -1,10 +1,9 @@
 ---
-title: "Lincoln in the Bardo by George Saunders"
-date: 2018-02-01T21:15:12+11:00
-draft: false
-description: "10/10. A masterpiece of style and character."
----
+title: Lincoln in the Bardo by George Saunders
+date: 2018-02-01 21:15:12 +1100
+description: 10/10. A masterpiece of style and character.
 
+---
 This book won the Man Booker prize, and it demonstrates why from the very first page.
 
 The story follows Willie Lincoln, son of Abraham, as he journeys into a mystical realm halfway between life and death: the Bardo. It's a well-considered and original premise, but the plot sits in the background as a canvas on which Saunders can display his literary skill.

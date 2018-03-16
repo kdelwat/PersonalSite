@@ -1,10 +1,10 @@
 ---
-title: "The 4-Hour Work Week by Tim Ferriss"
-date: 2018-02-16T20:57:40+11:00
-draft: false
-description: "5/10. An inspiring look at an ideal lifestyle but with a less-than-desirable path to getting there."
----
+title: The 4-Hour Work Week by Tim Ferriss
+date: 2018-02-16 20:57:40 +1100
+description: 5/10. An inspiring look at an ideal lifestyle but with a less-than-desirable
+  path to getting there.
 
+---
 I liked half of this book.
 
 In the beginning, Ferriss makes the case for "lifestyle design": an alternate life path to the usual *work hard, save, retire* truism. It revolves around "mini-retirements", sabbaticals spent working abroad. The vision is no doubt inspiring, and a life most would find appealing. He does well to extol its virtues, and I was left feeling motivated and ready to take action.
