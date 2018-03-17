@@ -41,39 +41,31 @@ In Racket, the function definitions take fixed forms.
 
 > (**selector** _agent_) → boolean?
 >
->     _agent:_ agent?
->
->  
+>   _agent:_ agent?
 >
 > \(**interactor** _agents)_ → (listof outcome?)
 >
->     _agents:_ (listof agent?)
->
->  
+>   _agents:_ (listof agent?)
 >
 > \(**modifier** _outcome agent)_ → agent?
 >
->     _outcome:_ outcome?
+>   _outcome:_ outcome?
 >
->     _agent:_ agent?
->
->  
+>   _agent:_ agent?
 >
 > \(**generator** _agents outcome events_) → (listof event?)
 >
->     _agents:_ (listof agent?)
+>   _agents:_ (listof agent?)
 >
->     _outcome:_ outcome?
+>   _outcome:_ outcome?
 >
->     _events:_ (listof event?)
->
->  
+>   _events:_ (listof event?)
 >
 > \(**reporter** _outcome report) ->_ struct?
 >
->     _outcome:_ outcome?
+>   _outcome:_ outcome?
 >
->     _report:_ struct?
+>   _report:_ struct?
 
 The model begins with an initial state: a list of agents in the system, and a list of events to apply. Each event is then applied one-by-one, returning a new state each time.
 
