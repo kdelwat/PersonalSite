@@ -2,7 +2,6 @@
 title: Functional agent-based modelling (or, Oprah's giving away gifts!)
 date: 2018-03-17 19:01:17 +1100
 description: 'A design for a purely-functional agent-based modeling system in Racket '
-draft: true
 
 ---
 # Introduction
