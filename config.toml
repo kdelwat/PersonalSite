@@ -4,6 +4,12 @@ sectionPagesMenu = "main"
 theme = "SimpleTheme"
 title = "Cadel Watson"
 [[menu.main]]
+identifier = "programming"
+name = "Programming"
+title = "Programming"
+url = "/programming/"
+weight = 9
+[[menu.main]]
 identifier = "racing"
 name = "Racing"
 title = "Racing"
@@ -15,9 +21,3 @@ name = "Projects"
 title = "Projects"
 url = "/projects/"
 weight = 1
-[[menu.main]]
-identifier = "programming"
-name = "Programming"
-title = "Programming"
-url = "/programming/"
-weight = 9
