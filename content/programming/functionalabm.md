@@ -199,7 +199,7 @@ Looks like all three audience members were endowed upon multiple times, and Opra
 
 # Oprah returns to her roots
 
-Oprah runs this giveaway for a while, and everyone seems really into it. Ratings are booming, her taxes have never looked better. But something keeps her up at night. Why is she donating money to everyone, even those who may already be rich? It just doesn't seem fair.
+Oprah runs this giveaway for a while, and everyone seems really into it. Ratings are booming; her taxes have never looked better. But something keeps her up at night. Why is she donating money to everyone, even those who may already be rich? It just doesn't seem fair.
 
 Luckily, she can fix this by changing her interactor, to only give a gift to the most deserving audience member chosen in each batch.
 
@@ -246,4 +246,4 @@ An ABM framework built on pure functions has a couple of key benefits:
 * Easier to reason about
 * Allows for simple time-travel debugging (cool!)
 
-Undoubtedly as I continue on my mission to simulate sporting events I'll expand and adapt the design!
+I think this design is a good start. Undoubtedly as I continue on my mission to simulate sporting events I'll expand and adapt the design!
