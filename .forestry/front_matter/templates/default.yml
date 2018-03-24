@@ -1,6 +1,4 @@
 ---
-pages:
-- environment/making-microinsurance-possible.md
 hide_body: false
 fields:
 - name: title
@@ -18,3 +16,8 @@ fields:
   type: boolean
   hidden: false
   default: true
+- type: textarea
+  name: description
+  label: Description
+  config:
+    required: true
