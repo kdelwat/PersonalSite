@@ -4,6 +4,12 @@ sectionPagesMenu = "main"
 theme = "SimpleTheme"
 title = "Cadel Watson"
 [[menu.main]]
+identifier = "environment"
+name = "Environment"
+title = "Environment"
+url = "/environment/"
+weight = 8
+[[menu.main]]
 identifier = "programming"
 name = "Programming"
 title = "Programming"
