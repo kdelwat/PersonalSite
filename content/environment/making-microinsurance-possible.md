@@ -1,5 +1,5 @@
 +++
-date = "2018-03-24T23:09:49+00:00"
+date = "2018-03-24T23:09:49Z"
 description = "A proposal for a peer-to-peer microinsurance scheme"
 title = "Making Microinsurance Possible"
 
