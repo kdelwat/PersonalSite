@@ -25,36 +25,29 @@ These issues mean that existing schemes aren't suitable for farmers who are remo
 
 An answer to these problems is peer-to-peer microinsurance. Communities around the world could establish their own schemes, tailored to individual needs. Each member of the scheme would contribute premiums, but no middle-man could take a cut. The funds raised would only be distributed to members when needed.
 
-Peer-to-peer systems allow microinsurance that is affordable and without overhead. Each community can address its own concerns, with local knowledge and relationships taking a central role. This fixes the addressing the major concer
+Peer-to-peer systems allow microinsurance that is affordable and without overhead. Each community can address its own concerns, with local knowledge and relationships taking a central role. This improves on existing systems in the case of very low income members. But peer-to-peer introduces other problems that we must address.
 
-The most pressing concern in a peer-to-peer system is governance. How could we ensure that bad actors can't unfairly benefit from communal funds? We should focus on a democratic approval model. Each member receives one vote, which is used when making decisions for the fund pool. When a member requests a payout, all others vote, with a majority required for approval. To add and remove members from the scheme, a supermajority is necessary, with all but one member required to approve the action.
+The first problem is governance. How can we ensure that bad actors can't unfairly benefit from communal funds? We should focus on a democratic approval model. Each member receives one vote, which is used when making decisions for the fund pool. When a member requests a payout, all others vote, with a majority required for approval. To add and remove members from the scheme, a supermajority is necessary, with all but one member required to approve the action.
 
 An approval system offloads the problem of governance onto existing relationships and reputations. Rather than a faceless insurer deciding if a claim is valid, local communities can rely on their own systems of trust. Members are incentivised to approve claims and avoid reprisal in the future. Requiring a supermajority for contentious decisions ensures that disputes between members can't easily affect the scheme.
 
-Another downside to peer-to-peer systems is a lack of independent appraisal. A possible solution is the yield-protection model. Under this scheme, members are insured at a percentage of their expected yield. At the beginning of a growing season, the members will together agree on a projected price for their crops, and declare the amount each will grow based on past results. If the actual output for a member is less than expected, they are paid the projected price multiplied by the difference. This mathematical approach removes the need for inspectors to calculate payouts.
+The second problem is a lack of independent appraisal. A possible solution is the yield-protection model. Under this scheme, members are insured at a percentage of their expected yield. At the beginning of a growing season, the members will together agree on a projected price for their crops, and declare the amount each will grow based on past results. If the actual output for a member is less than expected, they are paid the projected price multiplied by the production difference. This mathematical approach removes the need for inspectors to calculate payouts.
 
-A peer-to-peer system is not without shortcomings. The most concerning is the risk of community-scale failure. If a natural disaster were to affect all members of the scheme, the pool could not cover everyone. Encouraging inter-community co-operation would lessen this risk.
+The final and most concerning problem  is the risk of community-scale failure. If a natural disaster were to affect all members of the scheme, the pool could not cover everyone, leaving insurance payouts either uneven or inadequate, and failing to manage risk. Encouraging inter-community co-operation would lessen this concern by ensuring that small-scale events don't affect all members of the fund.
 
 # Conclusion
 
-The threat of climate change requires solutions to crop failure risk for low-income farmers. Existing microinsurance schemes are ineffective for those with very low earnings, due to overhead cost. Instead, a peer-to-peer system could help communities manage their risk.
+The threat of climate change requires solutions to the risk of crop failure for low-income farmers. Existing microinsurance schemes are ineffective for those with very low earnings, due to overhead cost and a lack of local knowledge. Instead, a peer-to-peer system could help communities manage their risk.
 
 In my next post, I will present a technical design for implementing such a scheme.
 
 # Sources
 
-[http://www.fao.org/docrep/003/Y1860E/y1860e04.htm](http://www.fao.org/docrep/003/Y1860E/y1860e04.htm "http://www.fao.org/docrep/003/Y1860E/y1860e04.htm")
-
-[https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.13959](https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.13959 "https://onlinelibrary.wiley.com/doi/abs/10.1111/gcb.13959")
-
-[https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/joc.3875](https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/joc.3875 "https://rmets.onlinelibrary.wiley.com/doi/abs/10.1002/joc.3875")
-
-[https://news.trust.org/item/20161117104624-jxar7/](https://news.trust.org/item/20161117104624-jxar7/ "https://news.trust.org/item/20161117104624-jxar7/")
-
-[http://www.munichre-foundation.org/dms/MRS/Documents/ProtectingthepoorAmicroinsurancecompendiumFullBook.pdf](http://www.munichre-foundation.org/dms/MRS/Documents/ProtectingthepoorAmicroinsurancecompendiumFullBook.pdf "http://www.munichre-foundation.org/dms/MRS/Documents/ProtectingthepoorAmicroinsurancecompendiumFullBook.pdf")
-
-[https://www.theguardian.com/world/2010/nov/14/mali-cotton-farmer-fair-trade](https://www.theguardian.com/world/2010/nov/14/mali-cotton-farmer-fair-trade "https://www.theguardian.com/world/2010/nov/14/mali-cotton-farmer-fair-trade")
-
-[https://dirp4.pids.gov.ph/ris/dps/pidsdps0625.pdf](https://dirp4.pids.gov.ph/ris/dps/pidsdps0625.pdf "https://dirp4.pids.gov.ph/ris/dps/pidsdps0625.pdf")
-
-[https://www.iruhl.com/crop-insurance-the-difference-between-yield-protection-and-revenue-protection/](https://www.iruhl.com/crop-insurance-the-difference-between-yield-protection-and-revenue-protection/ "https://www.iruhl.com/crop-insurance-the-difference-between-yield-protection-and-revenue-protection/")
+* John, Dixon, et al. “Sub-Saharan Africa.” _Farming Systems and Poverty: Improving Farmers' Livelihoods in a Changing World_, FAO and World Bank, 2001.
+* Tito, Richard, et al. “Global Climate Change  Increases Risk of Crop Yield Losses and Food Insecurity in the Tropical  Andes.” _Global Change Biology_, vol. 24, no. 2, 2017, doi:10.1111/gcb.13959.
+* Spinoni, Jonathan, et al. “World Drought Frequency, Duration, and Severity for 1951-2010.” _International Journal of Climatology_, vol. 34, no. 8, 2013, pp. 2792–2804., doi:10.1002/joc.3875.
+* Agnes, Kalibata. “Africa's Farmers Are among the Most Hurt by Climate Change.” _Thomson Reuters Foundation News_, 17 Nov. 2016, news.trust.org/item/20161117104624-jxar7/.
+* Churchill, Craig, and Michal Matul. _Protecting the Poor: a Microinsurance Compendium_. International Labour Office, 2012.
+* Day, Elizabeth. “The Desperate Plight of Africa's Cotton Farmers.” _The Observer_,  Guardian News and Media, 14 Nov. 2010,  www.theguardian.com/world/2010/nov/14/mali-cotton-farmer-fair-trade.
+* Llanto, Gilberto M, et al. _Microinsurance: Issues, Challenges, and Policy Reforms_. vol. 25, ser. 2006, Philippine Institute for Development Studies, 2006, _Microinsurance: Issues, Challenges, and Policy Reforms_.
+* Ruhl Insurance. “Crop Insurance: Yield Protection vs Revenue Protection.” _Ruhl Insurance_,  18 Feb. 2013,  www.iruhl.com/crop-insurance-the-difference-between-yield-protection-and-revenue-protection/.
