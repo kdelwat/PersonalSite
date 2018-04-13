@@ -1,7 +1,9 @@
 ---
 pages:
+- books/the-sympathizer.md
 - environment/making-microinsurance-possible.md
 hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
