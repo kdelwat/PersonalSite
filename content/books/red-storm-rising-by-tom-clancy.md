@@ -1,7 +1,6 @@
 +++
 date = "2018-05-31T01:08:55+00:00"
 description = "5/10 Entertaining and realistic, but harbours a severe problem"
-draft = true
 title = "Red Storm Rising by Tom Clancy"
 
 +++
