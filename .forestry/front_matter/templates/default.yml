@@ -1,8 +1,4 @@
 ---
-pages:
-- books/eating-animals-by-jonathan-safran-foer.md
-- books/the-sympathizer.md
-- environment/making-microinsurance-possible.md
 hide_body: false
 is_partial: false
 fields:
@@ -26,3 +22,8 @@ fields:
   label: Description
   config:
     required: true
+pages:
+- books/red-storm-rising-by-tom-clancy.md
+- books/eating-animals-by-jonathan-safran-foer.md
+- books/the-sympathizer.md
+- environment/making-microinsurance-possible.md
