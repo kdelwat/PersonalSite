@@ -23,6 +23,7 @@ fields:
   config:
     required: true
 pages:
+- books/string-theory-by-david-foster-wallace.md
 - books/red-storm-rising-by-tom-clancy.md
 - books/eating-animals-by-jonathan-safran-foer.md
 - books/the-sympathizer.md
