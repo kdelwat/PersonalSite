@@ -1,8 +1,13 @@
 +++
 date = "2018-05-31T01:37:37+00:00"
-description = ""
-draft = true
+description = "9/10 A fitting collection for a great modern writer"
 title = "String Theory by David Foster Wallace"
 
 +++
+Despite the misleading name, this posthumous collection has nothing to do with physics. Rather, it's an ode to Wallace's obsession with "the most beautiful game of all": tennis.
 
+Over five magazine pieces, the author's relentless enthusiasm for the game is clear. He goes from a discussion of his junior career, with an enigmatic wind-based playing style that petered out as soon as he left the American mid-west's Tornado Alley, to a scathing rebuke of commercialism at the US Open tournament. But it's the breathlessly-named _Tennis Player Michael Joyce's Professional Artistry_ _as a Paradigm of Certain Stuff about Choice, Freedom, Discipline, Joy, Grotesquerie, and Human Completeness_ which stands out the most. The piece follows Michael Joyce, a member of tennis' top-100, yet almost unknown, and in any other hands it would have been nothing but fluff. But since Wallace is the single-greatest writer of the contemporary era, it manages to transcend trivial description. It isn't really about Michael Joyce. It's about the _true_ sacrifice of professional sport, not the platitudes about athletes rising at 4am which commentators trot out before every Olympics. It's about the inherent sadness of Joyce devoting his entire life to reach a level of brilliance that no-one else will ever recognise, because he still isn't quite good enough. It's about his placid acceptance of the fact that it wasn't even his choice to make, his father having all-but-forced him into the sport. As with all his work, Wallace takes something that no-one has ever even considered, and turns it into a metaphor for humanity as a whole, and the dichotomy between sadness and joy that permeates all human lives. I'm sure I sound dramatic, but it's seriously that good.
+
+The pieces in the collection span Wallace's career, and as a huge fan of his it was interesting to see the development of his signature style. The opening description of the author's upbringing contains not a single footnote, while the main text of the final treatise on Roger Federer's brilliance is outnumbered by them. What doesn't change is Wallace's ability to see. His perception and lucidity is unparalleled. Here he does for tennis what he has done for the mundane all throughout his career, from cruise ships to lobsters to state fairs. He illuminates and dazzles, with not only a mastery of language and dry wit, but with the ability to reveal the depth and complexity in all things, no matter how seemingly insignificant. His descriptions of the sport unveil dimensions of play that I didn't even know existed.
+
+Wallace is unparalleled. This book is the epitome of genius; written by a man who can see what no-one else can and actually communicate it, in a manner that's staggering in both clarity and depth but still somehow entertaining. It's dense, dry, but full of joy, and pays great homage to Wallace's tragically-shortened life.
