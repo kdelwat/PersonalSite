@@ -6,7 +6,7 @@ type = "page"
 +++
 # Home
 
-I'm Cadel, a bioinformatics student at the University of New South Wales, Sydney.
+I'm Cadel, a bioinformatics student at the University of New South Wales, Sydney. I work as a backend developer at [AgriDigital](http://agridigital.io).
 
 I love building [projects](/projects) and solving problems with technology.
 
