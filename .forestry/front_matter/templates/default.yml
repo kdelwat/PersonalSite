@@ -23,9 +23,10 @@ fields:
   config:
     required: true
 pages:
-- books/string-theory-by-david-foster-wallace.md
-- books/red-storm-rising-by-tom-clancy.md
-- books/eating-animals-by-jonathan-safran-foer.md
-- books/the-sympathizer.md
-- projects/chessslayer.md
-- environment/making-microinsurance-possible.md
+- content/books/the-sympathizer.md
+- content/books/string-theory-by-david-foster-wallace.md
+- content/books/red-storm-rising-by-tom-clancy.md
+- content/books/eating-animals-by-jonathan-safran-foer.md
+- content/racing/the-paradox-of-tyre-degradation.md
+- content/projects/chessslayer.md
+- content/environment/making-microinsurance-possible.md
