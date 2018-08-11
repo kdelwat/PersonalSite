@@ -25,6 +25,7 @@ fields:
     required: true
 pages:
 - content/racing/the-paradox-of-tyre-degradation.md
+- content/projects/elm-truffle-box.md
 - content/books/tools-of-titans-by-tim-ferriss.md
 - content/books/tribe-of-mentors-by-tim-ferriss.md
 - content/books/the-sympathizer.md
