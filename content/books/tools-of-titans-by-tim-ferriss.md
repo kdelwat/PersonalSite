@@ -1,8 +1,17 @@
 +++
 date = "2018-08-11T00:13:32+00:00"
-description = ""
-draft = true
+description = "8/10. A wealth of practical information."
 title = "Tools of Titans by Tim Ferriss"
 
 +++
+I had a [mixed ](https://cadelwatson.com/books/fourhourworkweek/)experience with Ferriss' most famous book, _The 4-Hour Work Week_ (which, despite my best efforts, has yet to bring my work week anywhere close to four hours). But maybe I'm a sucker for punishment, because I decided to pick up another and give it a try.
 
+_Tools of Titans_ is a distillation of the author's hundreds of podcast interviews with highly-successful people. Each interview ranges from the subject's morning routine, to quotes they live by, to random supplements they take every morning based on seriously dubious evidence. Interspersed with the interviews are Ferriss' own guides to different aspects of healthy living: sleep, diet, exercise, and meditation, among others.
+
+The interviews themselves were hit and miss, as could be expected. I found some inspiring, and full of starting points for research and exploration, and others a little trite. There are only so many times you can hear familiar truisms before they start to cloy (who could have guessed that you can become the best by "outworking" all the competition?). But the author's interludes were consistently excellent. It turns out that Ferriss, when not selling snake-oil or standing on the shoulders of the less fortunate to succeed in life, has an admirable attitude of self-experimentation. Whether I agreed with his recommendations or not, they were always based on at least some evidence. Even if the reader takes none of his concrete advice, his attitude alone is enough of an influence to make positive changes in their lives.
+
+In reading this book I developed a long list of notes: book recommendations, quotes, products, and lifestyle recommendations. The book's main role is perhaps as a starting point. While an interview condensed into three or four pages can't elaborate fully on wild claims or simplified advice, it sure does an excellent job of at least raising issues and ideas as something to consider. I can confidently say that I'm a happier person after reading this book; not least because the repeated mentions of meditation by interviewees inspired me to try it, and by doing so almost completely cure my tendency towards insomnia.
+
+However, I remain wary of many claims in this book, for the same reason that advice from "the best" should be taken with a pinch of salt: survivorship bias. Maybe taking cold showers in the morning is actually terrible and unproductive for 90% of the population (and from my brief flirtation with it, I wouldn't be surprised). But if one of those 10% who do respond well goes on to become famous, their advice is given more weight, even though they are on average incorrect. This issue is highlighted by a balanced split between the subjects of the book, who sit in two camps. The first group names incredibly hard work as the secret to their success, while the second credits theirs with the exact opposite: the avoidance of work through less well-travelled shortcuts. It's a disparity that underpins the importance of taking a broader view of the book's claims.
+
+All in all, I'd rather base my life on the advice of the successful than on others. Ferriss' book is a big step up from his debut, and a great starting point for making progress towards self-improvement.
