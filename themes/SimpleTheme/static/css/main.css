@@ -117,6 +117,10 @@ section p {
   font-style: italic;
 }
 
+pre {
+  overflow-x: scroll;
+}
+
 @media (min-width: 800px) {
   main {
     width: 70vw;
