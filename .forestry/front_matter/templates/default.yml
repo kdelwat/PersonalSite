@@ -24,13 +24,13 @@ fields:
   config:
     required: true
 pages:
-- content/racing/the-paradox-of-tyre-degradation.md
 - content/projects/elm-truffle-box.md
-- content/books/tools-of-titans-by-tim-ferriss.md
 - content/books/tribe-of-mentors-by-tim-ferriss.md
+- content/books/tools-of-titans-by-tim-ferriss.md
+- content/racing/the-paradox-of-tyre-degradation.md
 - content/books/the-sympathizer.md
-- content/books/eating-animals-by-jonathan-safran-foer.md
-- content/environment/making-microinsurance-possible.md
-- content/projects/chessslayer.md
-- content/books/red-storm-rising-by-tom-clancy.md
 - content/books/string-theory-by-david-foster-wallace.md
+- content/books/red-storm-rising-by-tom-clancy.md
+- content/projects/chessslayer.md
+- content/environment/making-microinsurance-possible.md
+- content/books/eating-animals-by-jonathan-safran-foer.md
