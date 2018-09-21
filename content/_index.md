@@ -10,4 +10,4 @@ I'm Cadel. I work as a blockchain developer at [AgriDigital](http://agridigital.
 
 I love building [projects](/projects) and solving problems with technology.
 
-I'm into [motor racing](/racing), [books](/books), linguistics, and environmentalism.
+I'm into [motor racing](/racing), [books](/books), linguistics, and [environmentalism](/environment).
