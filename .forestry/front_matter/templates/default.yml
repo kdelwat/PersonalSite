@@ -24,6 +24,7 @@ fields:
   config:
     required: true
 pages:
+- content/programming/long-code-now.md
 - content/programming/notes-simple-made-easy-by-rich-hickey.md
 - content/projects/elm-truffle-box.md
 - content/books/tribe-of-mentors-by-tim-ferriss.md
