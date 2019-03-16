@@ -4,7 +4,7 @@ date: 2017-01-19 12:48:53 +1100
 description: An Android task management app.
 
 ---
-*Available on [Google Play](https://play.google.com/store/apps/details?id=com.cadelwatson.momentum)*
+*Available on [GitHub](https://github.com/kdelwat/Momentum)*
 
 Traditional to-do apps have a fatal flaw. Task lists overflow with items due
 months in the future, overloading the user with unnecessary information.
