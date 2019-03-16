@@ -7,6 +7,8 @@ title = "ChessSlayer"
 +++
 # ChessSlayer
 
+*Available on [GitHub](https://github.com/kdelwat/chess).*
+
 ChessSlayer is a UCI-compatible chess engine, written in Go. While it doesn't
 support the whole UCI standard, it is perfectly capable of playing games when
 used with a client like [Scid vs PC](http://scidvspc.sourceforge.net/).

@@ -4,6 +4,9 @@ description = "A starter kit for building functional Ethereum dApps."
 title = "Elm Truffle-Box"
 
 +++
+
+*Available on [GitHub](https://github.com/kdelwat/elm-truffle-box).*
+
 As my work has taken me further into Ethereum development, I've grown increasingly frustrated with the quality of dApp tooling. The React-driven JavaScript frontends which seem to be the standard approach cause issues. Web3 is a well-built library, but not a well-designed one, and often brings problems to the table. Whether it be the hacky code required to inject its Ethereum provider into the page, or the fact that its documentation is inconsistently out-of-date, I became frustrated, and searched for some sort of wrapper which would make using the library more palatable.
 
 At the same time, as my journey into functional programming continues, I came across the [Elm](http://elm-lang.org/) language. It's a joy to use: the compiler catches run-time errors before they can occur, the type system eliminates many bugs I would previously have struggled to pin down, and the state system maps well to my mental model.
