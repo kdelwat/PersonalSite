@@ -5,7 +5,7 @@ description: A web-app which realistically simulates the phonological processes 
   word evolution.
 
 ---
-*Available on the [Web](http://onset.cadelwatson.com) and [GitHub](https://github.com/kdelwat/onset).*
+*Available on the [Web](https://onset.cadel.me) and [GitHub](https://github.com/kdelwat/onset).*
 
 Onset is a web-app which realistically simulates the phonological processes of
 word evolution. This has applications in linguistics research and language
