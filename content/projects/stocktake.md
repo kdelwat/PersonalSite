@@ -4,7 +4,9 @@ date: 2019-03-17 08:29:00 +1100
 description: A minimal site for financial data.
 ---
 
-*Available on the [Web](http://www.stocktake.xyz) and [GitHub](https://github.com/kdelwat/stocktake).*
+*Available on [GitHub](https://github.com/kdelwat/stocktake).*
+
+**Note: on June 1st, 2019, IEX removed 3rd-party data from its API and broke this project. I may or may not fix it in the future.**
 
 Stocktake.xyz is an extremely minimal site for financial market data. It supports shares on multiple exchanges like IEX and NASDAQ as well as cryptocurrencies and futures.
 
