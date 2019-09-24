@@ -4,9 +4,10 @@ title = ""
 type = "page"
 
 +++
+
 # Home
 
-I'm Cadel. I work as a blockchain developer at [AgriDigital](http://agridigital.io), building the supply chain of the future, and study bioinformatics at the University of New South Wales, Sydney.
+I'm Cadel. I work as a developer at [Geora](http://www.geora.io), building the supply chain of the future, and study bioinformatics at the University of New South Wales, Sydney.
 
 I love building [projects](/projects) and solving problems with technology.
 
