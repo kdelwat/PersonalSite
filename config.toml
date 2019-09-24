@@ -27,3 +27,9 @@ name = "Projects"
 title = "Projects"
 url = "/projects/"
 weight = 1
+[[menu.main]]
+identifier = "writing"
+name = "Writing"
+title = "Writing"
+url = "/writing/"
+weight = 2
