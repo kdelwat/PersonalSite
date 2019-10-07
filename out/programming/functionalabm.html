@@ -1,0 +1,433 @@
+<html>
+    <head>
+        <title>Functional agent-based modelling (or, Oprah&rsquo;s giving away gifts!) - Cadel Watson</title>
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <style>
+            main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            body {
+                font-family: sans-serif;
+                box-sizing: border-box;
+                font-size: 16px;
+                line-height: 1.5em;
+            }
+
+            article {
+                width: 100%;
+            }
+
+            header > h1 {
+                margin-bottom: 0.25em;
+            }
+
+            header > p {
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-style: italic;
+            }
+
+            header {
+                margin-bottom: 1em;
+            }
+
+            a {
+                color: inherit;
+            }
+
+            article {
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+
+            nav > ul {
+                list-style: none;
+                /* padding: 0.5rem; */
+                padding-left: 0.5rem;
+            }
+
+            section {
+                padding-left: 0.5rem;
+                min-width: 0;
+            }
+
+            figure {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            figure img {
+                max-width: 50%;
+                border: 1px solid black;
+            }
+
+            figure {
+                margin-bottom: 0;
+            }
+
+            figcaption h4 {
+                margin-top: 0.5rem;
+                font-weight: normal;
+                font-style: italic;
+                margin-bottom: 0.5rem;
+            }
+
+            blockquote {
+                font-style: italic;
+            }
+
+            section p {
+                margin: 1.5em 0;
+            }
+
+            .section-list {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            .recent-list {
+                list-style: none;
+                font-style: italic;
+                padding-left: 0;
+            }
+
+            .recent-header {
+                font-size: inherit;
+                margin-bottom: 0em;
+            }
+
+            .section-list li p {
+                font-style: italic;
+                margin: 0.5em 0 1.5em 0;
+            }
+
+            .footer {
+                font-size: 10px;
+                text-align: right;
+                margin-right: 0.5em;
+            }
+
+            .book-description {
+                font-style: italic;
+            }
+
+            pre {
+                overflow-x: scroll;
+            }
+
+            @media (min-width: 800px) {
+                main {
+                    width: 60vw;
+                    margin: 1rem auto;
+                }
+
+                article {
+                    display: flex;
+                }
+
+                nav {
+                    margin: 1rem;
+                }
+
+                section {
+                    margin: 1rem;
+                    flex-grow: 1;
+                    padding-left: 0rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1>Cadel Watson</h1>
+                <p>cadel@cadelwatson.com</p>
+                <p>
+                    <a href="https://github.com/kdelwat">github.com/kdelwat</a>
+                </p>
+            </header>
+
+            <article>
+                <section>
+                    <h1>Functional agent-based modelling (or, Oprah&rsquo;s giving away gifts!)</h1>
+
+<p>Recently I&rsquo;ve been playing around with agent-based modeling (ABM). It&rsquo;s a simulation technique that takes a &ldquo;bottom-up&rdquo; approach: by defining the interactions between individual actors, the system as a whole emerges organically. While more clever people apply it to <a href="http://cress.soc.surrey.ac.uk/web/publications/books/agent-based-modelling-economics/more-information">economics</a> and <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3640333/">biology</a>, I&rsquo;m interested in it from a sport simulation perspective. If we consider a sports league to be a system built from the interactions of teams, how accurately can we model it?</p>
+
+<p>In experimenting with approaches so far, I&rsquo;ve been consistently burned by the standard drawbacks of stateful programming. The biggest stumbling block is accidental mutation of agents. When an interaction occurs, and the agents are changed as a result of it, when should state be updated? Before other events occur? During? After? My code ends up a tangle of side-effects that&rsquo;s a nightmare to reason about.</p>
+
+<p>I decided to take a step back and consider what my ideal framework for ABM would look like. From the beginning, it had to be functional. I don&rsquo;t need more side-effects in my life! This is what I came up with in an afternoon.</p>
+
+<h2>Requirements</h2>
+
+<p>When pared down to key features, an ABM framework only needs a few things:</p>
+
+<ol>
+<li>A way to represent agents and events.</li>
+<li>The ability to modify agent state based on their interactions.</li>
+<li>A method for determining when and where agents interact.</li>
+</ol>
+
+<p>In my system, I also wanted to include a way for interactions to generate further events. I think it will come in handy when modeling things like finals series or trades.</p>
+
+<h2>Framework</h2>
+
+<p>The framework revolves around <em>events</em>. An event is a set of higher-order functions which define the ruleset of the model. A model&rsquo;s events define <em>all</em> its rules; there is no need for injecting parameters or other messy approaches.</p>
+
+<p>When an event occurs on a set of agents, it generates <em>outcomes</em>. Model state is a function of these outcomes, which can modify agents and create further events.</p>
+
+<p>The event functions look like this:</p>
+
+<ul>
+<li><strong>selector:</strong> a function which chooses which agents will be involved in the event&rsquo;s interaction.</li>
+<li><strong>interactor:</strong> a function which produces an <em>outcome</em> based on an interaction.</li>
+<li><strong>modifier:</strong> a function which takes old agents and returns new agents with an outcome applied.</li>
+<li><strong>generator:</strong> a function which generates new events based on outcomes.</li>
+<li><strong>reporter:</strong> a function which is responsible for logging and reporting on simulation progress.</li>
+</ul>
+
+<p>In Racket, the function definitions take fixed forms.</p>
+
+<blockquote>
+<p>(<strong>selector</strong> <em>agent</em>) → boolean?</p>
+
+<p><em>agent:</em> agent?</p>
+
+<p>(<strong>interactor</strong> <em>agents)</em> → (listof outcome?)</p>
+
+<p><em>agents:</em> (listof agent?)</p>
+
+<p>(<strong>modifier</strong> <em>outcome agent)</em> → agent?</p>
+
+<p><em>outcome:</em> outcome?</p>
+
+<p><em>agent:</em> agent?</p>
+
+<p>(<strong>generator</strong> <em>agents outcome events</em>) → (listof event?)</p>
+
+<p><em>agents:</em> (listof agent?)</p>
+
+<p><em>outcome:</em> outcome?</p>
+
+<p><em>events:</em> (listof event?)</p>
+
+<p>(<strong>reporter</strong> <em>outcome report) -&gt;</em> struct?</p>
+
+<p><em>outcome:</em> outcome?</p>
+
+<p><em>report:</em> struct?</p>
+</blockquote>
+
+<p>The model begins with an initial state: a list of agents in the system, and a list of events to apply. Each event is then applied one-by-one, returning a new state every time.</p>
+
+<p><img src="/uploads/2018/03/17/ABM.png" alt="A diagram showing each higher-order function in an event" /></p>
+
+<h2>Implementation</h2>
+
+<p>The generic code that powers this system is quite short. We start off by defining some data structures.</p>
+
+<pre><code>(struct event (selector interactor modifier generator reporter))
+(struct outcome (id) #:transparent)
+(struct agent (id) #:transparent)
+</code></pre>
+
+<p>While this will work as-is, it&rsquo;s helpful to define a contract to enforce the correct function signatures for events (which will save time debugging later).</p>
+
+<pre><code>(provide  (contract-out [struct event ((selector (-&gt; agent? boolean?))
+                                       (interactor (-&gt; (listof agent?) (listof outcome?)))
+                                       (modifier (-&gt; outcome? agent? agent?))
+                                       (generator (-&gt; (listof agent?) outcome? (listof event?) (listof event?)))
+                                       (reporter (-&gt; outcome? struct? struct?)))]))
+</code></pre>
+
+<p>With these structures defined, we can write a function which runs one step of the model. It should take the first event from the queue, apply it as in the diagram above, and return the new model state (note: I&rsquo;m very new to Racket, so this code may not be idiomatic!).</p>
+
+<pre><code>(define (step-model agents all-events report)
+  (define event (first all-events))
+  (define events (rest all-events))
+
+  ; get all interacting agents
+  (define selector (event-selector event))
+  (define targets (filter selector agents))
+
+  ; produce a list of outcomes for the interactions
+  (define interactor (event-interactor event))
+  (define outcomes (interactor targets))
+
+  ; modify agent state based on outcomes
+  (define modifier (event-modifier event))
+  (define modify-agent-partial ((curry modify-agent) modifier outcomes))
+  (define new-agents (map modify-agent-partial agents))
+
+  ; generate new events based on outcomes
+  (define generator ((curry (event-generator event)) agents))
+  (define new-events (foldl generator events outcomes))
+
+  ; generate a new report for each outcome
+  (define new-report (foldl (event-reporter event) report outcomes))
+
+  ; return the new state
+  (list new-agents new-events new-report))
+
+; take a modifier, a list of outcomes, and an agent. Apply each outcome to the
+; agent if it is targeted (i.e. the ID matches)
+(define (modify-agent modifier outcomes agent)
+  (define (apply-outcome outcome agent)
+    (cond
+      [(equal? (agent-id agent) (outcome-id outcome)) (modifier outcome agent)]
+      [else (identity agent)]))
+
+  (foldl apply-outcome agent outcomes))
+</code></pre>
+
+<p>Once we can run the model in steps, it&rsquo;s easy enough to run it as a whole.</p>
+
+<pre><code>(define (run-model agents events report)
+  (cond
+    [(empty? events) (list agents events report)]
+    [else (let ([new-state (step-model agents events report)])
+            (let ([agents (first new-state)]
+                  [events (second new-state)]
+                  [report (third new-state)])
+              (run-model agents events report)))]))
+</code></pre>
+
+<p><code>run-model</code> will consume an entire list of initial events, returning the final model state.</p>
+
+<h2>Where does Oprah come in?</h2>
+
+<p>Everything so far has been abstract, so I want to provide a concrete example of modeling an everyday system.</p>
+
+<p>Oprah Winfrey is a popular TV host known for her exorbitant giveaways to audience members (perhaps she has a streak of socialism about her). Let&rsquo;s say her giveaway model looks like this:</p>
+
+<ol>
+<li>For each audience member, flip a coin. If heads, they are selected for the giveaway.</li>
+<li>Give each selected member \$100.</li>
+<li>Update tax return with donation amount (there has to be a benefit somewhere!)</li>
+</ol>
+
+<p>Let&rsquo;s think about how we could model this using event functions.</p>
+
+<p>Firstly, we need to create some data structures to encode the model.</p>
+
+<pre><code>(struct tax-return (total-donated) #:transparent)
+(struct gift outcome (amount) #:transparent)
+(struct audience-member agent (wallet) #:transparent)
+</code></pre>
+
+<p>A <code>tax-return</code> is an example of a <em>report</em>, a <code>gift</code> an <em>outcome</em>, and an <code>audience-member</code> an <em>agent</em>.</p>
+
+<p>Next, we need to implement a selector which chooses audience members.</p>
+
+<pre><code>(define (select-from-audience agent)
+  (equal? (random 2) 1))
+</code></pre>
+
+<p>An interactor should take the selected agents and generate outcomes based on them. In this case, it creates a gift outcome for each audience member chosen.</p>
+
+<pre><code>(define (determine-gifts agents)
+  (map (lambda (agent) (gift (agent-id agent) 100)) agents))
+</code></pre>
+
+<p>A modifier takes an outcome and a relevant agent, and returns a modified agent.</p>
+
+<pre><code>(define (give-gift gift target)
+  (audience-member (agent-id target) (+ (audience-member-wallet target) (gift-amount gift))))
+</code></pre>
+
+<p>For now, there are no extra events generated, so we&rsquo;ll leave the generator blank.</p>
+
+<pre><code>(define (generate agents outcome events)
+  (identity events))
+</code></pre>
+
+<p>It&rsquo;s very important to Oprah that she update her tax return with a reporter.</p>
+
+<pre><code>(define (file-taxes outcome current-tax-return)
+  (tax-return (+ (gift-amount outcome) (tax-return-total-donated current-tax-return))))
+</code></pre>
+
+<p>Finally, we can tie this all up in an event, and run the model!</p>
+
+<pre><code>(define oprah-giveth (event select-from-audience determine-gifts give-gift generate file-taxes))
+
+(define initial-events (list oprah-giveth oprah-giveth oprah-giveth oprah-giveth))
+(define initial-agents (list (audience-member 0 0) (audience-member 1 100) (audience-member 2 -100)))
+(define initial-report (tax-return 0))
+(run-model initial-agents initial-events initial-report)
+
+; (list (list (audience-member 0 300) (audience-member 1 200) (audience-member 2 200)) '() (tax-return 700))
+</code></pre>
+
+<p>Looks like all three audience members were endowed upon multiple times, and Oprah got a big fat discount on her taxes.</p>
+
+<h2>Oprah returns to her roots</h2>
+
+<p>Oprah runs this giveaway for a while, and everyone seems really into it. Ratings are booming; her taxes have never looked better. But something keeps her up at night. Why is she donating money to everyone, even those who may already be rich? It just doesn&rsquo;t seem fair.</p>
+
+<p>Luckily, she can fix this by changing her interactor, to only give a gift to the most deserving audience member chosen in each batch.</p>
+
+<pre><code>(define (poorer? a b)
+  (if (&lt; (audience-member-wallet a) (audience-member-wallet b)) #t #f))
+
+(define (determine-gifts agents)
+  (cond
+    [(empty? agents) (list)]
+    [else (let ([most-worthy (first (sort agents poorer?))])
+            (list (gift (agent-id most-worthy) 100)))]))
+
+(run-model initial-agents initial-events initial-report)
+; (list (list (audience-member 0 100) (audience-member 1 100) (audience-member 2 100)) '() (tax-return 300))
+</code></pre>
+
+<p>That seems fairer to her!</p>
+
+<h2>Oprah goes rogue</h2>
+
+<p>There&rsquo;s one more change Oprah wants to make. Recently, she&rsquo;s really been getting into Marx (I suspected she had a socialist streak). She decides that she&rsquo;ll add a unique new feature to her show. Every giveaway, there&rsquo;ll be a small chance that she runs a <em>takeaway</em>, stealing \$100 from the richest audience member selected!</p>
+
+<p>To do this, she creates a new event. Only the interactor needs to change, since it just creates a different outcome.</p>
+
+<pre><code>(define (determine-penalties agents)
+  (cond
+    [(empty? agents) (list)]
+    [else (let ([least-worthy (last (sort agents poorer?))])
+            (list (gift (agent-id least-worthy) -100)))]))
+
+(define oprah-taketh (event select-from-audience determine-penalties give-gift generate file-taxes))
+</code></pre>
+
+<p>Then, she modifies the generator for her giveaway event, to add a small chance of randomly adding a takeaway.</p>
+
+<pre><code>(define (generate agents outcome events)
+  (if (equal? (random 5) 1) (append (list oprah-taketh) events) (identity events)))
+</code></pre>
+
+<p>Perfect! Now those pesky rich will be taught a lesson.</p>
+
+<h2>Summary</h2>
+
+<p>An ABM framework built on pure functions has a couple of key benefits:</p>
+
+<ul>
+<li>No unwanted side-effects messing with execution order</li>
+<li>Easier to reason about</li>
+<li>Allows for simple time-travel debugging (cool!)</li>
+</ul>
+
+<p>I think this design is a good start. Undoubtedly as I continue on my mission to simulate sporting events I&rsquo;ll expand and adapt the design!</p>
+
+                </section>
+            </article>
+
+            <footer></footer>
+        </main>
+    </body>
+</html>
