@@ -14,4 +14,4 @@ Onset is built in two independent parts. The front-end is written in Javascript
 using the Vue framework for reactive interfaces, while the back-end simulation
 engine is written in Python using the Flask server framework.
 
-{{< figure src="/images/Onset1.png" title="The Onset interface" alt="Onset screenshot">}}
+![Onset screenshot](/images/Onset1.png)

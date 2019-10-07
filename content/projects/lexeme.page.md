@@ -15,5 +15,5 @@ declension program. It has a number of useful features:
 -   Export database to a csv file compatible with [PolyGlot](https://draquet.github.io/PolyGlot/) or spreadsheet software.
 -   Easy file-based configuration.
 
-{{< figure src="/images/Lexeme1.jpg" title="Generating a word" alt="Lexeme word generation prompt">}}
-{{< figure src="/images/Lexeme1.jpg" title="Declining a word" alt="Lexeme word declension prompt">}}
+![Generating a word](/images/Lexeme1.jpg)
+![Declining a word](/images/Lexeme2.jpg)

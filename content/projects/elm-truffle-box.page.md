@@ -8,6 +8,6 @@ At the same time, as my journey into functional programming continues, I came ac
 
 So why not try Ethereum development with Elm? I found [cmditch's elm-ethereum](https://github.com/cmditch/elm-ethereum) library, and it was exactly what I was looking for. Elm's compiler forces me to think explicitly about errors: what happens if a transaction fails? If the node is unreachable? Or if MetaMask has the incorrect transaction nonce (a persistently irritating issue)? If I don't address these problems, the program doesn't even compile!
 
-The only thing holding me back was the lack of a boilerplate for quickly getting started with an Elm dApp. So I made one: [elm-truffle-box](). It's a simple wrapper around elm-ethereum (and its documented examples) and Truffle, the contract development framework. You can use the compiled contracts from within Elm to create functional, safe dApps.
+The only thing holding me back was the lack of a boilerplate for quickly getting started with an Elm dApp. So I made one: [elm-truffle-box](https://github.com/kdelwat/elm-truffle-box). It's a simple wrapper around elm-ethereum (and its documented examples) and Truffle, the contract development framework. You can use the compiled contracts from within Elm to create functional, safe dApps.
 
 I hope to see more developers turning to these sorts of languages for blockchain development. It could end up eradicating a whole host of messy issues that the space is known for!

@@ -13,5 +13,5 @@ The app is built with React Native, a cross-platform Javascript framework that
 allows for simultaneous development of Android and iOS apps. It is written in
 ES6 JavaScript.
 
-{{< figure src="/images/Momentum1.jpg" title="Momentum home screen" alt="Momentum home screen">}}
-{{< figure src="/images/Momentum2.jpg" title="Adding a task" alt="Adding a task in the Momentum app">}}
+![Momentum home screen](/images/Momentum1.jpg)
+![Adding a task in the Momentum app](/images/Momentum2.jpg)

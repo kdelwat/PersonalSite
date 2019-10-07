@@ -6,4 +6,4 @@ Messaging applications have the potential to become the user interfaces of the f
 
 Boomerang is written in Python, extending the Sanic server framework. It is extensively tested with continuous integration and features full API documentation generated using Sphinx
 
-{{< figure src="/images/Boomerang1.png" title="Boomerang code sample" alt="Boomerang code sample">}}
+![Boomerang code sample](/images/Boomerang1.png)
