@@ -3,7 +3,7 @@
 In my (limited) time watching Formula One, I've never encountered a change from
 management that has resulted in such polarisation of fans as the Halo.
 
-{{< figure src="/images/Halo.jpg" title="The Halo on Haas' challenger (Sutton Images)" alt="The Halo device on the Haas F1 car">}}
+![The Halo on Haas' challenger (Sutton Images)](/images/Halo.jpg)
 
 So far, the reaction seems to be predominantly negative, but fans either love it
 or hate it. In this post, I'll go through the major parts of the debate and
@@ -75,8 +75,8 @@ than ugly. Teams like Williams have done an admirable job integrating the device
 with their livery, and such attempts minimise its aesthetic impact. Other teams
 like Mercedes seem to have put no effort whatsoever into looks.
 
-{{< figure src="/images/Williams2018.jpg" title="Williams' 2018 car" alt="Williams' 2018 car">}}
-{{< figure src="/images/Mercedes2018.jpg" title="Mercedes' 2018 car" alt="Mercedes' 2018 car">}}
+![Williams' 2018 car](/images/Williams2018.jpg)
+![Mercedes' 2018 car](/images/Mercedes2018.jpg)
 
 # Conclusion
 

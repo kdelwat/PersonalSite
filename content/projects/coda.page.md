@@ -11,5 +11,5 @@ building declarative Javascript user interfaces. The back-end is written in
 Python, using Pandoc with custom filters and XeTeX to generate beautiful PDF
 documents.
 
-![Screenshot of Coda home screen](/images/Coda1.png)
-![Sample PDF output from Coda](/images/Coda2.png)
+![Screenshot of Coda home screen](/images/Coda1.jpg)
+![Sample PDF output from Coda](/images/Coda2.jpg)

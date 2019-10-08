@@ -33,8 +33,6 @@ available analysis modes are depth-based and time-based. I recommend using a
 depth of four or five, or a move time of 5 seconds, for the best
 performance/time tradeoff.
 
-![A game in progress](https://cdn.pbrd.co/images/H4YkKEg.png)
-
 ## Further improvements
 
 While ChessSlayer works as a minimal chess engine, there are a number of
