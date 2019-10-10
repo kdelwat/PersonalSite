@@ -31,7 +31,14 @@ I'm Cadel. I work as a developer at [Geora](http://www.geora.io), building the s
 
 ## Alternate history
 
--   [Playing with Fire](/writing/policehistory.html)
+-   [Yawirra](/yawirra/index.html)
+    -   [History](/yawirra/history/index.html)
+    -   [International relations](/yawirra/ir/index.html)
+    -   [Politics](/yawirra/politics/index.html)
+    -   [Military](/yawirra/military.html)
+    -   [Sports](/yawirra/sports.html)
+-   [Argentiere](/yawirra/argentiere.html)
+    -   [Playing with Fire](/writing/policehistory.html)
 
 ## Misc
 
