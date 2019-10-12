@@ -19,10 +19,11 @@
                 display: flex;
                 flex-wrap: wrap;
                 width: 80%;
+                justify-content: center;
             }
 
             main > div {
-                flex: 1 25%;
+                flex: 0 27%;
                 margin: 20px;
                 padding: 10px;
                 border: 2px black solid;
@@ -31,24 +32,52 @@
             .imagebox {
                 border: none;
                 display: flex;
+                justify-content: space-between;
+                align-items: start;
                 flex-wrap: wrap;
-                padding: 0px;
+                padding: 0px 10px;
             }
 
             .me {
-                border: 1px red solid;
-                background-image: url("index.png");
-                height: auto;
-                flex: 0 32%;
-                background-size: cover;
+                flex: 0 0 25%;
+                display: flex;
+                border: 2px black solid;
             }
 
             /* From https://stackoverflow.com/a/29308459 */
             .me:before {
                 content: "";
-                display: block;
+                display: table;
                 padding-top: 100%;
-                float: left;
+            }
+
+            .me-1 {
+                background: linear-gradient(
+                        rgba(255, 0, 0, 0.5),
+                        rgba(255, 0, 0, 0.5)
+                    ),
+                    url("index.png");
+                background-size: cover;
+            }
+
+            .me-2 {
+                margin-top: 10%;
+                background: linear-gradient(
+                        rgba(255, 255, 0, 0.5),
+                        rgba(255, 255, 0, 0.5)
+                    ),
+                    url("index.png");
+                background-size: cover;
+            }
+
+            .me-3 {
+                margin-top: 20%;
+                background: linear-gradient(
+                        rgba(0, 0, 255, 0.5),
+                        rgba(0, 0, 255, 0.5)
+                    ),
+                    url("index.png");
+                background-size: cover;
             }
 
             h1,
@@ -123,15 +152,9 @@
             </div>
 
             <div class="imagebox">
-                <div class="me"></div>
-                <div class="me"></div>
-                <div class="me"></div>
-                <div class="me"></div>
-                <div class="me"></div>
-                <div class="me"></div>
-                <div class="me"></div>
-                <div class="me"></div>
-                <div class="me"></div>
+                <div class="me me-1"></div>
+                <div class="me me-2"></div>
+                <div class="me me-3"></div>
             </div>
 
             <div class="bs-y">
