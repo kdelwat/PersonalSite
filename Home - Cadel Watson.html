@@ -28,6 +28,29 @@
                 border: 2px black solid;
             }
 
+            .imagebox {
+                border: none;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0px;
+            }
+
+            .me {
+                border: 1px red solid;
+                background-image: url("index.png");
+                height: auto;
+                flex: 0 32%;
+                background-size: cover;
+            }
+
+            /* From https://stackoverflow.com/a/29308459 */
+            .me:before {
+                content: "";
+                display: block;
+                padding-top: 100%;
+                float: left;
+            }
+
             h1,
             h2,
             h3,
@@ -97,6 +120,18 @@
                 <p>
                     <a href="https://github.com/kdelwat">github.com/kdelwat</a>
                 </p>
+            </div>
+
+            <div class="imagebox">
+                <div class="me"></div>
+                <div class="me"></div>
+                <div class="me"></div>
+                <div class="me"></div>
+                <div class="me"></div>
+                <div class="me"></div>
+                <div class="me"></div>
+                <div class="me"></div>
+                <div class="me"></div>
             </div>
 
             <div class="bs-y">
