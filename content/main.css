@@ -10,7 +10,7 @@ main {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    /* width: 80%; */
     justify-content: center;
 }
 
@@ -20,14 +20,34 @@ main.page {
 }
 
 main > div {
-    flex: 0 27%;
+    flex: 1 0 100%;
     margin: 30px;
     padding: 10px;
     border: 2px black solid;
 }
 
-main.home > div {
+main.home > div.image {
     min-height: 200px;
+}
+
+@media (min-width: 600px) {
+    main > div {
+        flex-basis: 20%;
+    }
+
+    main.home > div {
+        min-height: 200px;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        width: 80%;
+    }
+
+    main > div {
+        flex-grow: 0;
+    }
 }
 
 main.home > div li a {
@@ -101,6 +121,7 @@ li > ul {
     border: 2px black solid;
     background: url("index.png");
     background-size: cover;
+    background-position: 50% 50%;
 }
 
 /* From https://stackoverflow.com/a/29308459 */
