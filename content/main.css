@@ -24,6 +24,9 @@ main > div {
     margin: 30px;
     padding: 10px;
     border: 2px black solid;
+}
+
+main.home > div {
     min-height: 200px;
 }
 
@@ -188,6 +191,30 @@ h6.top + ul {
     margin-top: -0.75rem;
 }
 
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    font-size: 1rem;
+}
+
+.content h3::before {
+    content: "# ";
+}
+
+.content h4::before {
+    content: "## ";
+}
+
+.content h5::before {
+    content: "### ";
+}
+
+.content h6::before {
+    content: "#### ";
+}
+
 a {
     color: black;
 }
@@ -207,4 +234,11 @@ main.home ul {
 
 .bs-y {
     box-shadow: yellow 10px 10px 0px;
+}
+
+pre {
+    overflow-x: scroll;
+    background-color: lightgray;
+
+    padding: 1rem;
 }
