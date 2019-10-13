@@ -48,7 +48,7 @@ main.home > div li:hover a {
 }
 
 li > ul {
-    padding-left: 1rem;
+    padding-left: 1rem !important;
 }
 
 .content {
@@ -241,4 +241,8 @@ pre {
     background-color: lightgray;
 
     padding: 1rem;
+}
+
+blockquote {
+    margin-left: 1rem;
 }

@@ -62,8 +62,6 @@ In Racket, the function definitions take fixed forms.
 
 The model begins with an initial state: a list of agents in the system, and a list of events to apply. Each event is then applied one-by-one, returning a new state every time.
 
-![A diagram showing each higher-order function in an event](/uploads/2018/03/17/ABM.png)
-
 ## Implementation
 
 The generic code that powers this system is quite short. We start off by defining some data structures.
