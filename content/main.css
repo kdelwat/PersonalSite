@@ -1,22 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+
 body {
     font-family: monospace;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
     font-size: 16px;
 }
 
-main {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    /* width: 80%; */
-    justify-content: center;
-}
-
 main > div {
-    flex: 1 0 100%;
-    margin: 30px;
+    margin: 10px;
+    margin-top: 40px;
+
     padding: 10px;
     border: 2px black solid;
 }
@@ -26,8 +20,21 @@ main.home > div.image {
 }
 
 @media (min-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        width: 80%;
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+
     main > div {
-        flex-basis: 20%;
+        margin: 30px;
+        flex: 1 1 33%;
     }
 
     main.home > div {
@@ -35,18 +42,19 @@ main.home > div.image {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
     main {
         width: 80%;
     }
 
     main > div {
-        flex-grow: 0;
+        flex-basis: 20%;
     }
+}
 
-    main.page {
-        width: 90%;
-        align-items: start;
+@media (min-width: 1921px) {
+    main {
+        width: 40%;
     }
 }
 
@@ -69,11 +77,6 @@ main.home > div li:hover a {
 
 li > ul {
     padding-left: 1rem !important;
-}
-
-.content {
-    flex-basis: 60%;
-    max-width: 60%;
 }
 
 .scenery {
