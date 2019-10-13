@@ -6,197 +6,26 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <style>
-            main {
-                display: flex;
-                flex-direction: column;
-            }
-
-            body {
-                font-family: sans-serif;
-                box-sizing: border-box;
-                font-size: 16px;
-                line-height: 1.5em;
-            }
-
-            article {
-                width: 100%;
-            }
-
-            header > h1 {
-                margin-bottom: 0.25em;
-            }
-
-            header > p {
-                margin-top: 0px;
-                margin-bottom: 0px;
-                font-style: italic;
-            }
-
-            /* Begin generated from https://type-scale.com/ */
-            p {
-                margin-bottom: 1.25em;
-            }
-
-            h1,
-            h2,
-            h3,
-            h4,
-            h5 {
-                margin: 2.75rem 0 1rem;
-                font-weight: 400;
-                line-height: 1.15;
-            }
-
-            h1 {
-                margin-top: 0;
-                font-size: 1.802em;
-            }
-
-            h2 {
-                font-size: 1.602em;
-            }
-
-            h3 {
-                font-size: 1.424em;
-            }
-
-            h4 {
-                font-size: 1.266em;
-            }
-
-            h5 {
-                font-size: 1.125em;
-            }
-
-            /* End generated from https://type-scale.com/ */
-
-            header {
-                margin-bottom: 1em;
-            }
-
-            a {
-                color: inherit;
-            }
-
-            article {
-                border: 1px solid black;
-                border-radius: 5px;
-            }
-
-            nav > ul {
-                list-style: none;
-                /* padding: 0.5rem; */
-                padding-left: 0.5rem;
-            }
-
-            section {
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                min-width: 0;
-            }
-
-            img {
-                border: 1px solid black;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                max-width: 100%;
-            }
-
-            img + img {
-                margin-top: 1.25em;
-            }
-
-            blockquote {
-                font-style: italic;
-            }
-
-            .section-list {
-                list-style: none;
-                padding-left: 0;
-            }
-
-            .recent-list {
-                list-style: none;
-                font-style: italic;
-                padding-left: 0;
-            }
-
-            .recent-header {
-                font-size: inherit;
-                margin-bottom: 0em;
-            }
-
-            .section-list li p {
-                font-style: italic;
-                margin: 0.5em 0 1.5em 0;
-            }
-
-            .footer {
-                font-size: 10px;
-                text-align: right;
-                margin-right: 0.5em;
-            }
-
-            .book-description {
-                font-style: italic;
-            }
-
-            pre {
-                overflow-x: scroll;
-            }
-
-            @media (min-width: 800px) {
-                main {
-                    width: 60vw;
-                    margin: 1rem auto;
-                }
-
-                article {
-                    display: flex;
-                }
-
-                nav {
-                    margin: 1rem;
-                }
-
-                section {
-                    margin: 1rem;
-                    flex-grow: 1;
-                    padding-left: 0rem;
-                }
-
-                .row {
-                    display: flex;
-                }
-
-                .row div {
-                    flex: 1 1 50%;
-                    margin-right: 1em;
-                    margin-left: 1em;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="/main.css" />
     </head>
 
     <body>
-        <main>
-            <header>
-                <h1>Cadel Watson</h1>
-                <p>cadel@cadelwatson.com</p>
+        <main class="page">
+            <div class="bs-r">
+                <h1 class="top">Cadel Watson</h1>
                 <p>
-                    <a href="https://github.com/kdelwat">github.com/kdelwat</a>
+                    I’m Cadel. I work as a developer at
+                    <a href="http://www.geora.io/">Geora</a>, building the
+                    supply chain of the future, and study bioinformatics at the
+                    University of New South Wales, Sydney.
                 </p>
-            </header>
+            </div>
 
-            <article>
+            <div class="top bs-b content">
                 <section>
                     {{ .Content }}
                 </section>
-            </article>
-
-            <footer></footer>
+            </div>
         </main>
     </body>
 </html>

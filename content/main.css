@@ -1,0 +1,197 @@
+body {
+    font-family: monospace;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}
+
+main.page {
+    width: 90%;
+    align-items: start;
+}
+
+main > div {
+    flex: 0 27%;
+    margin: 30px;
+    padding: 10px;
+    border: 2px black solid;
+    min-height: 200px;
+}
+
+main.home > div li a {
+    display: block;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    text-indent: -20px;
+    margin-left: 20px;
+}
+
+main.home > div li:hover {
+    background-color: black;
+}
+
+main.home > div li:hover a {
+    color: white;
+}
+
+li > ul {
+    padding-left: 1rem;
+}
+
+.content {
+    flex-basis: 60%;
+    max-width: 60%;
+}
+
+.scenery {
+    background: url("scenery.jpg");
+    background-size: cover;
+}
+
+.canyon {
+    background: url("canyon.jpg");
+    background-size: cover;
+}
+
+.lake {
+    background: url("lake2.jpg");
+    background-size: cover;
+}
+
+.snow {
+    background: url("snow.jpg");
+    background-size: cover;
+}
+
+.dock {
+    background: url("dock.jpg");
+    background-size: cover;
+}
+
+.mountains {
+    background: url("blue.jpg");
+    background-size: cover;
+}
+
+.imagebox {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+}
+
+.me {
+    flex: 0 0 25%;
+    display: flex;
+    border: 2px black solid;
+    background: url("index.png");
+    background-size: cover;
+}
+
+/* From https://stackoverflow.com/a/29308459 */
+.me:before {
+    content: "";
+    display: table;
+    padding-top: 100%;
+}
+
+.me-1 {
+    /* background: linear-gradient(
+                        rgba(255, 0, 0, 0.5),
+                        rgba(255, 0, 0, 0.5)
+                    ),
+                    url("index.png"); */
+
+    /* background-size: cover; */
+}
+
+.me-2 {
+    margin-top: 10%;
+    /* background: linear-gradient(
+                        rgba(255, 255, 0, 0.5),
+                        rgba(255, 255, 0, 0.5)
+                    ),
+                    url("index.png");
+                background-size: cover; */
+}
+
+.me-3 {
+    margin-top: 20%;
+    /* background: linear-gradient(
+                        rgba(0, 0, 255, 0.5),
+                        rgba(0, 0, 255, 0.5)
+                    ),
+                    url("index.png");
+                background-size: cover; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+}
+
+h1.top,
+h2.top,
+h3.top,
+h4.top,
+h5.top,
+h6.top {
+    font-size: 1rem;
+    margin: 0;
+    position: relative;
+    top: -1.25rem;
+    display: inline;
+    background-color: white;
+}
+
+h1.top + p,
+h2.top + p,
+h3.top + p,
+h4.top + p,
+h5.top + p,
+h6.top + p,
+h1.top + ul,
+h2.top + ul,
+h3.top + ul,
+h4.top + ul,
+h5.top + ul,
+h6.top + ul {
+    margin-top: -0.75rem;
+}
+
+a {
+    color: black;
+}
+
+main.home ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bs-r {
+    box-shadow: red 10px 10px 0px;
+}
+
+.bs-b {
+    box-shadow: blue 10px 10px 0px;
+}
+
+.bs-y {
+    box-shadow: yellow 10px 10px 0px;
+}
