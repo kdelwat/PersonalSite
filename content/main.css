@@ -40,6 +40,11 @@ main.home > div.image {
     main.home > div {
         min-height: 200px;
     }
+
+    .content {
+        min-width: 0;
+        flex-basis: 100%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -49,6 +54,10 @@ main.home > div.image {
 
     main > div {
         flex-basis: 20%;
+    }
+
+    .content {
+        flex-basis: 50%;
     }
 }
 
