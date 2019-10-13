@@ -8,10 +8,11 @@
 
         <style>
             body {
-                font-family: sans-serif;
+                font-family: monospace;
                 box-sizing: border-box;
                 display: flex;
                 justify-content: center;
+                font-size: 16px;
             }
 
             main {
@@ -28,6 +29,23 @@
                 padding: 10px;
                 border: 2px black solid;
                 min-height: 200px;
+            }
+
+            main > div li a {
+                display: block;
+                padding-top: 1px;
+                padding-bottom: 1px;
+
+                text-indent: -20px;
+                margin-left: 20px;
+            }
+
+            main > div li:hover {
+                background-color: black;
+            }
+
+            main > div li:hover a {
+                color: white;
             }
 
             .scenery {
